@@ -1,0 +1,29 @@
+// prisma/schema.prisma
+datasource db {
+  provider  = "postgresql"
+  url  	    = env("DATABASE_URL")
+  // uncomment next line if you use Prisma <5.10
+  // directUrl = env("DATABASE_URL_UNPOOLED")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Tag {
+  id Int @id @default(autoincrement())
+  name String @unique
+  color String
+}
+
+model Post {
+  id Int @id @default(autoincrement())
+  authorId Int
+  title String
+  content String
+  createdAt DateTime @default(now())
+  category String
+  likes Int @default(0)
+  replies String[]
+  tags String[]
+}
