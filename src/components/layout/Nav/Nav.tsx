@@ -12,7 +12,7 @@ import {
 	TooltipContent,
 	TooltipTrigger,
 	TooltipProvider,
-} from '@/components/ui/tooltip'
+} from '@/components/ui/Tooltip'
 
 interface NavItem {
 	href: string

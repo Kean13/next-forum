@@ -1,3 +1,5 @@
+import Toolbar from '@/components/layout/Posts/Toolbar'
+
 export default function PostsPage() {
-	return <div>Posts</div>
+	return <Toolbar />
 }
