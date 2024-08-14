@@ -13,6 +13,12 @@ const font = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: 'Платформа для онлайн-обсуждений',
+	description: 'Гибкая платформа для онлайн-обсуждений',
+	themeColor: '#EA580C',
+	openGraph: {
+		title: 'NextForum',
+		description: 'NextForum — Гибкая платформа для онлайн-обсуждений',
+	},
 }
 
 export default function RootLayout({
