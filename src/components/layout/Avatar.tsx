@@ -49,7 +49,7 @@ export default function Avatar({ link }: AvatarProps) {
 				</Link>
 			</DropdownMenuTrigger>
 			<DropdownMenuContent align='end'>
-				<DropdownMenuLabel>My Account</DropdownMenuLabel>
+				<DropdownMenuLabel>Мой аккаунт</DropdownMenuLabel>
 				<DropdownMenuSeparator />
 				{menuItems.map((item, index) => (
 					<MenuItemComponent key={index} {...item} />

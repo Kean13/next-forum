@@ -5,7 +5,7 @@ import { FC } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-import { Home, Flame, CircleDashed, Users } from 'lucide-react'
+import { Home, Clock, Flame, CircleDashed, Users } from 'lucide-react'
 
 import {
 	Tooltip,
@@ -47,8 +47,9 @@ const NavLink: FC<NavItem> = ({ href, tooltip, Icon }) => {
 export default function Nav() {
 	const navItems: NavItem[] = [
 		{ href: '/', tooltip: 'Главная', Icon: Home },
+		{ href: '/posts', tooltip: 'Посты', Icon: CircleDashed },
 		{ href: '/popular', tooltip: 'Популярное', Icon: Flame },
-		{ href: '/new-posts', tooltip: 'Новое', Icon: CircleDashed },
+		{ href: '/new', tooltip: 'Новое', Icon: Clock },
 		{ href: '/users', tooltip: 'Пользователи', Icon: Users },
 	]
 

@@ -5,7 +5,7 @@ export async function getTags() {
 	return tags
 }
 
-export async function getTagById(tagId: number) {
+export async function getTagById(tagId: string) {
 	const tag = await database.tag.findUnique({
 		where: {
 			id: Number(tagId),

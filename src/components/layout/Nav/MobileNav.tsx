@@ -5,7 +5,7 @@ import { FC } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-import { Home, Flame, CircleDashed, Users } from 'lucide-react'
+import { Home, Clock, Flame, CircleDashed, Users } from 'lucide-react'
 
 interface NavItem {
 	href: string
@@ -33,8 +33,8 @@ const MobileNavLink: FC<NavItem> = ({ href, title, Icon }) => {
 export default function MobileNav() {
 	const navItems: NavItem[] = [
 		{ href: '/', title: 'Главная', Icon: Home },
+		{ href: '/posts', title: 'Посты', Icon: CircleDashed },
 		{ href: '/popular', title: 'Популярное', Icon: Flame },
-		{ href: '/new-posts', title: 'Новое', Icon: CircleDashed },
 		{ href: '/users', title: 'Пользователи', Icon: Users },
 	]
 
